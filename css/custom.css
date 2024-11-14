@@ -1,0 +1,43 @@
+body{
+    background: url('../images/fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card .text-container #head {    
+    padding-top: 25px;
+}
+h2{
+    color: #ff7d2e;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 3px 1px black;
+    font-family: 'Happy Monkey', cursive;
+    margin-bottom: 50px;
+}
+h3{
+    top: 108%;
+    position: absolute;
+    color: #f6792c;
+    font-size: 3rem;
+    left: 59%;
+    rotate: -40deg;
+}
+.card .front{
+    border: 13px #ff7d2e solid;
+    border-radius: 0 20px 0 20px;
+    background: url('../images/starfall.gif');
+}
+.cover-shape-large .shape-block, .cover-shape-large .shape-diamond {
+    background-color: #ff7d2e;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background: url('../images/fondo2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+  }

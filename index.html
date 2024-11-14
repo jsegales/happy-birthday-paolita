@@ -1,5 +1,71 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Teresita</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
 <body>
-Hola Paolita
+  <h2>¡¡¡Feliz Cumpleaños Teresita!!!</h2>
+  <div class="card">
+    <div class="back"></div>
+    <div class="front">
+      <div class="cover-shape-large">
+        <div class="shape-diamond"></div>
+        <div class="shape-block"></div>
+      </div>
+      <div class="cover-shape-small">
+        <div class="shape-diamond"></div>
+        <div class="shape-block">
+          <img src="images/teresita.jpg" alt="" width="100%">
+          <!-- <div class="cake">
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+                <div class="candle">
+                  <div class="flame"></div>
+                </div>
+              </div> -->
+              <h3>Abrir</h3>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <p id="head">¡Muchas Felicidades!</p>
+      <p> <span class="strikethrough">más vale que te guste 😄</span>
+        Querida Teresita, te deseo lo mejor este día tan especial para Ti. Me considero muy afortunado el haberte conocido, ya que eres alguien muy especial
+        en mi vida, me encanta mucho tu forma de ser. Te quiero Mucho ❣️ <br><br>Atte. Juan</br>
+        Pincha <a href="images/fondo.jpg" download>aquí</a> y <a href="images/fondo2.jpg" download>aquí</a>
+      </p>
+    </div>
+  </div>
+  <audio src="media/sound.mp3" id="sonido"></audio>
+  
+  <script>
+    $(document).ready(function(){
+      $('body').on('click', function(){
+        $("#sonido")[0].play();;
+        /* audio.volume = 0.2; */
+      });
+      /* $('.front').mouseenter(function() {
+        // Reproduce el audio cuando el mouse entra en el elemento
+        var audio = document.getElementById('sonido');
+        audio.play();
+      }); */
+    });
+  </script>
 </body>
 </html>
